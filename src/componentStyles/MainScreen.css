@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+.Container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.MainArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.ImageApartment {
+  width: 385px;
+  height: 259px;
+  /* background: url(image.png); */
+  border-radius: 24px;
+}
+
+.ApartmentInfo {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid green; */
+  width: 385px;
+  gap: 15px;
+}
+
+.ApartmentInfo2 {
+  display: inline-flex;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  width: 385px;
+}
+
+.Super {
+  font-family: 'Montserrat' sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 15px;
+  /* identical to box height */
+  text-transform: uppercase;
+  border: 1px solid #4f4f4f;
+  border-radius: 8px;
+  padding: 3px 7px;
+}
+
+.Super2 {
+  display: none;
+}
+
+.ApartmentType {
+  font-family: 'Montserrat' sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #828282;
+}
+
+.ApartmentRating {
+  display: flex;
+  /* margin-left: 150px; */
+}
+
+.ApartmentRating2 {
+  display: flex;
+  margin-left: 225px;
+  text-align: right;
+}
+
+.ApartmentRating p,
+.ApartmentRating2 p {
+  font-family: 'Montserrat' sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #4f4f4f;
+}
+
+.ApartmentTitle {
+  font-family: 'Montserrat' sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.Star {
+  color: #eb5757;
+  font-size: 18px;
+  padding-right: 3px;
+  margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+  .MainArea {
+    margin-bottom: 105px;
+    margin: 0 auto;
+  }
+
+  .ImageApartment {
+    width: 595px;
+    height: 359px;
+  }
+
+  .ApartmentRating2 {
+    margin-left: 440px;
+  }
+
+  .ApartmentInfo2 {
+    width: 595px;
+  }
+
+  .ApartmentRating {
+    margin-left: 410px;
+  }
+
+  .ApartmentInfo {
+    width: 585px;
+  }
+}
+
+@media (max-width: 375px) {
+  .ImageApartment {
+    width: 350px;
+    height: 238px;
+  }
+
+  .ApartmentInfo,
+  .ApartmentInfo2 {
+    width: 350px;
+  }
+
+  .ApartmentType {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .ApartmentInfo {
+    display: inline-flex;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    align-items: center;
+    /* border: 1px solid green; */
+  }
+
+  .ApartmentRating,
+  .ApartmentRating2 {
+    margin: 0;
+  }
+
+  .ApartmentRating p,
+  .ApartmentRating2 p {
+    font-size: 12px;
+  }
+
+  .Super {
+    font-size: 10px;
+    line-height: 12px;
+    border-radius: 8px;
+    padding: 3px 7px;
+  }
+
+  .ApartmentInfo2 {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -1,3 +1,64 @@
 .App {
-  text-align: center;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+hr {
+  width: 402px;
+  border-top: 2px solid #bdbdbd;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+.BackBtn {
+  border: none;
+  background: #eb5757;
+  color: #fff;
+  font-family: 'Mulish' sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.BackBtn:hover {
+  padding: 9px 29px;
+  background: #ee4242;
+  color: #eee;
+}
+
+@media (max-width: 1024px) {
+  .App {
+    width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .App {
+    width: 600px;
+  }
+}
+
+@media (max-width: 414px) {
+  .App {
+    width: 352px;
+  }
+
+  hr {
+    width: 250px;
+    margin-top: 40px;
+  }
+
+  .BackBtn {
+    float: right;
+    margin: -100px 0 -150px 0;
+    padding: 7px 20px;
+  }
+
+  .BackBtn:hover {
+    padding: 6px 19px;
+  }
 }

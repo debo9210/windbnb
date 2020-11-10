@@ -1,0 +1,395 @@
+* {
+  box-sizing: border-box;
+}
+
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.NavBarMenu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #ffffff;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.Search {
+  width: 17px;
+  height: 17px;
+  color: #eb5757;
+}
+
+.Location {
+  font-family: 'Mulish' sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height */
+  color: #000000;
+  border: 1px solid #f2f2f2;
+  height: 45px;
+  padding: 12px 15px 0 15px;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.AddGuest {
+  font-family: 'Mulish' sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+  color: #bdbdbd;
+  border: 1px solid #f2f2f2;
+  height: 45px;
+  padding: 12px 15px 0 15px;
+  border-left: none;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Search {
+  border: 1px solid #f2f2f2;
+  height: 45px;
+  padding: 12px 35px 0px 15px;
+  border-left: none;
+  width: 45px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Location:hover,
+.AddGuest:hover,
+.Search:hover {
+  height: 43px;
+}
+
+.FilterDrawer {
+  width: 100%;
+  height: 500px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  background-color: #fff;
+  display: none;
+}
+
+.FilterDrawer p {
+  font-family: 'Mulish' sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  color: #333333;
+  margin: 10px 0 0 5px;
+  /* display: none; */
+}
+
+.EditSearch {
+  display: none;
+}
+
+.DrawerMenu {
+  display: flex;
+  /* justify-content: center; */
+  width: 1248px;
+  height: 55px;
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  margin: 90px auto;
+  /* border: 1px solid red; */
+}
+
+.Close {
+  float: right;
+  margin: 20px 30px;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.Cancel {
+  font-size: 36px;
+  color: #eb5757;
+}
+
+.InputContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 7px 0 0 20px;
+}
+
+.InputContainer input {
+  width: 426px;
+  height: 55px;
+  border: none;
+  outline: none;
+  /* filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.1)); */
+  /* border-radius: 16px; */
+}
+
+.InputContainer label {
+  font-family: 'Mulish' sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 11px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+::placeholder {
+  font-family: 'Mulish' sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+  color: #bdbdbd;
+}
+
+.SearchBtn {
+  width: 130px;
+  height: 48px;
+  background: #eb5757;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  color: #fff;
+  border: none;
+  outline: none;
+  margin: 3px 0 0 60px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.Search2 {
+  font-size: 22px;
+  position: absolute;
+  left: 1030px;
+  top: 107px;
+  color: #fff;
+}
+
+.LocationDropDown {
+  list-style-type: none;
+  font-family: 'Mulish' sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height */
+  color: #4f4f4f;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.LocationOn {
+  font-size: 20px;
+  padding-right: 5px;
+  margin-top: 5px;
+}
+
+.InputDropDown {
+  margin-top: -55px;
+  display: flex;
+  gap: 310px;
+}
+
+input[type='text'] {
+  font-family: 'Mulish' sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+  color: #333333;
+}
+
+/* .GuestDropDown {
+  border: 1px solid orangered;
+} */
+
+.GuestStatus {
+  font-family: 'Mulish' sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+}
+
+.GuestDesc {
+  font-family: 'Mulish' sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #bdbdbd;
+  padding: 0;
+  margin: 0;
+}
+
+.NumBtn {
+  border: 1px solid #828282;
+  width: 23px;
+  height: 23px;
+  background: none;
+  border-radius: 4px;
+  margin: 10px 0 0 0;
+  cursor: pointer;
+  color: #828282;
+}
+
+.Num {
+  font-family: 'Mulish' sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+  color: #000000;
+  padding: 0 10px;
+}
+
+.Adult {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+  .DrawerMenu {
+    width: 900px;
+  }
+
+  .InputContainer input {
+    width: 300px;
+  }
+
+  .Search2 {
+    left: 785px;
+  }
+
+  .InputDropDown {
+    gap: 190px;
+  }
+}
+
+@media (max-width: 768px) {
+  .DrawerMenu {
+    width: 700px;
+  }
+
+  .InputContainer input {
+    width: 220px;
+  }
+
+  .Search2 {
+    left: 590px;
+  }
+
+  .InputDropDown {
+    gap: 105px;
+  }
+
+  .LocationDropDown {
+    margin-left: 17px;
+  }
+}
+
+@media (max-width: 375px) {
+  .NavBar {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+  .BrandLogo {
+    margin: 0 0 35px 10px;
+  }
+
+  .NavBarMenu {
+    margin: 0 auto;
+  }
+
+  .FilterDrawer {
+    height: 600px;
+  }
+
+  .EditSearch {
+    display: block;
+  }
+
+  .Close {
+    margin: -20px 2px 0 0;
+  }
+
+  .Cancel {
+    font-size: 36px;
+    color: #333;
+  }
+
+  .DrawerMenu {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 351px;
+    height: 113px;
+    margin: 40px auto;
+  }
+
+  .SearchBtn {
+    width: 126px;
+    height: 48px;
+    margin: 313px 0 0 100px;
+    padding-left: 20px;
+  }
+
+  .InputDropDown {
+    gap: 70px;
+    margin-top: -30px;
+  }
+
+  .LocationDropDown {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 20px;
+    width: 150px;
+  }
+
+  .InputContainer input {
+    width: 321px;
+    height: 35px;
+  }
+
+  .LocationOn {
+    font-size: 20px;
+    padding-right: 5px;
+    margin-top: 5px;
+    margin-left: -30px;
+  }
+
+  .Search2 {
+    font-size: 22px;
+    left: 125px;
+    top: 499px;
+  }
+
+  /* .GuestDropDown {
+    display: none;
+  } */
+}
